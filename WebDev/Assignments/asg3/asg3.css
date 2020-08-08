@@ -1,0 +1,113 @@
+/*css for assignment 3*/
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&family=Roboto&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+	text-align: center;
+
+}
+img{
+	padding:2em;
+	display:flex;
+	margin:auto;
+}
+header{
+	font-family: 'Lemonada', cursive;
+	background-color: orange;
+	margin-bottom: 3.5em;
+	padding:1.5em;
+}
+main{
+	font-family: 'Roboto', sans-serif;
+}
+footer{
+	background-color: black;
+	color:white;
+	padding:1.3em;
+	margin-top: 4em;
+}
+#holidaycheck{
+	text-align: center;
+}
+#childnyu{
+	display: inline-block;
+}
+button{
+	background-color: orange;
+	color: white;
+	border-radius: 30%;
+	padding:13px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+
+}
+.buttonasg2{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.nav{
+	display: flex;
+	justify-content: flex-end;
+}
+.nav a{
+	margin-left:10px;
+}
+.dot{
+	display: inline-block;
+	background-color: #d1d0cf;
+	/*a grayish color on the orange spectrum*/
+	border-radius: 50%;
+	height:15px;
+	width:15px;
+	transition: background-color, 0.5s;
+
+}
+
+#rollButton{
+	margin:20px;
+	border-radius: 10%;
+}
+
+#dice1, #dice2{
+	display: none;
+}
+#holidayimg{
+	display:none;
+}
+footer{
+	font-family: 'Roboto', sans-serif;
+}
+form{
+	font-family: 'Roboto', sans-serif;
+}
+a:link, a:visited{
+	color: purple;
+	text-decoration: none;
+}
+a:hover{
+	color:gold;
+}
+
+a:active{
+	color:#e8a4e4;
+	/*light purple*/
+}
+
+
+
+@media only screen and (max-width:600px){
+	img{
+		width:350px;
+	}
+	#dice1{
+		width:70px;
+	}
+	#dice2{
+		width:70px;
+	}
+	#headpic{
+		width:200px;
+	}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width initial-scale = 1.0">
+		<link rel = "icon" type = "image/png" href = "../../pics/logo.png">
+		<title>NYU Holiday Calendar Application</title>
+		<link rel = "stylesheet" href = "asg3.css">
+	</head>
+
+
+	<body>
+		<header>
+			<div class = "nav">
+				<a href = "../../index.html">Back</a>
+			</div>
+			<h1>NYU Holiday Calendar Application</h1>
+		</header>
+
+		<main id = "holidaycheck">
+			Enter a date to check and see if it falls on a holiday: 
+			<input type = "date" name = "dateStart" id = "dateStart" required>
+			<button onclick="holidaySearch()">Check</button>
+			<img src = "pics/laborday.png" id = "holidayimg">
+			<p id= "output"></p>
+		</main>
+
+		<footer>
+			<p><em>You are strong no matter what anyone tells you</em></p>
+			<small>&copy; 2019 Ivette Cortez</small>
+		</footer>
+
+		<script src = "asg3.js"></script>
+		<script src = "js/jquery-3.3.1.min.js"></script>
+    	<script src = "js/parallax.min.js"></script>
+	</body>
+</html>

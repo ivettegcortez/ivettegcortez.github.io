@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<title>Crap Game</title>
+		<link rel = "icon" type = "image/png" href = "../../pics/logo.png">
+		<meta name = "viewport" content = "width = device-width initial-scale = 1.0">
+		<link rel = "stylesheet" href = "asg3.css">
+	</head>
+
+	<body>
+		<header>
+			<div class = "nav">
+				<a href = "../../index.html">Back</a>
+			</div>
+			<h1>Crap Game</h1>
+			<img id = "headpic" src = "pics/dice-group.png" width = "300" height = "150" alt = "Group of Dice">
+		</header>
+
+		<main>
+			<form id = "form" onsubmit = "return false;">
+				Enter Your Bet Here: <input type = "number" name = "bet" id = "bet" required min = "1" max = "20">
+				<input value = "Reset" type = "reset"> 
+			</form>
+
+			<button id = "rollButton" onclick = "randDice()">Roll Dice</button>
+			<img src = "pics/1.jpg" id = "dice1" width = "115" height = "111" alt = "Dice 1">
+			<p id = "dice1text"></p>
+			
+			<img src = "pics/2.jpg" id = "dice2" width = "115" height = "112" alt = "Dice 2">
+			<p id = "dice2text"></p>
+
+			<p id = "sum"></p>
+
+		</main>
+
+		<footer>
+			<p><em>You are strong no matter what anyone tells you</em></p>
+			<small>&copy; 2019 Ivette Cortez</small>
+		</footer>
+
+		<script src = "asg3.js"></script>
+		<script src = "js/jquery-3.3.1.min.js"></script>
+    	<script src = "js/parallax.min.js"></script>
+	</body>
+</html>

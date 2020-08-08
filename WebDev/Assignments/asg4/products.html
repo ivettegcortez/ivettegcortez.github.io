@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+	<html lang = "en">
+		<head>
+			<meta charset = "utf-8">
+			<title>Product Page</title>
+			<link rel = "stylesheet" href = "asg4.css">
+			<link rel = "icon" type = "image/png" href = "../../pics/logo.png">
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		</head>
+
+		<body>
+			<header>
+				<a href = "../../index.html" class = "links">Back</a>
+				<h1>Buy Your Concert Tickets Now!</h1>
+			</header>
+			<main>
+				<h2>Choose which artist you would like to see.</h2>
+				<h2>Click checkout whenever you're ready!</h2>
+
+				<div id = "ticketbuy">
+					<div class = "ticketsearch">
+						<label for = "RomeoSantos">Romeo Santos</label>
+						<br>
+						Price: $<input type = "number" name = "rprice" id = "rprice" value = "500" readonly>
+						 <br>
+						Quantity: <input type = "number" name = "rtickets" id = "rtickets" min = "0" max = "10" value = "0" >
+						
+						<br>
+						<br>
+						Subtotal: $<input type = "number" name = "rsubtotal" id = "rsubtotal" placeholder = "0" readonly>
+
+					</div>
+					<img src = "pics/romeo-santos.jpg" width = "533" height = "533" alt = "Romeo Santos Pic">
+				
+					<div class = "ticketsearch">
+						<label for = "Grupo5">Grupo 5</label>
+						<br>
+						Price: $<input type = "number" name = "gprice" id = "gprice" value = "350" readonly>
+						<br>
+						Quantity: <input type = "number" name = "gtickets" id = "gtickets" min = "0" max = "10" value = "0" >
+						<!-- onchange event for total -->
+						<br>
+						<br>
+						Subtotal: $<input type = "number" name = "gsubtotal" id = "gsubtotal" placeholder="0" readonly>
+					</div>
+					<img src = "pics/grupo5.jpg" width = "500" height = "500" alt = "Grupo 5 Pic">
+				</div>
+				<!-- add shipping info -->
+				<select name = "shippinginfo" id="shipment">
+					<!-- how to make shipment option come up as a label -->
+					<option disabled selected>Please select shipment type</option>
+					<option value = "willcall">Will-Call</option>
+					<option value = "delivery">Delivery (+$7)</option>
+				</select>
+				<br>
+				<br>
+				Grand Total: <input type = "number" name = "finaltotal" id = "finaltotal" value = "0" readonly>
+				<br>
+				<br>
+
+
+				<form>
+					<fieldset>
+						<legend>Personal Info</legend>
+						First Name: <input type = "text" name = "firstname" > <br>
+						Last Name: <input type = "text" name = "lastname" > <br>
+						E-mail: <input type = "email" name = "email" > <br>
+						Address: <input type = "text" name = "address" > <br>
+						Credit Card:<br>
+							<input type = "radio" name = "credit" value = "Visa">Visa<br>
+							<input type = "radio" name = "credit" value = "MasterCard">MasterCard<br>
+							<input type = "radio" name = "credit" value = "AMEX">AMEX<br>
+						Credit Card Number: <input type = "text" name = "ccnumber"><br>
+						Expiration Date: <br>
+							Month <input type = "number" name = "expmm" min = "1" max = "12" >
+							Year <input type = "number" name = "expyy" min = "2020" max = "2029" ><br>
+						Zip Code: <input type = "number" name = "zipcode" id = "zipcode" min = "0">
+						<br>
+
+						<input type = "submit" value = "Checkout"  id="submit">
+						<input type = "reset">
+
+
+					</fieldset>
+					
+				</form>
+
+				<p id = "output"></p>
+
+			</main>
+
+			<footer>
+				<p><em>Live for today, not tomorrow.</em></p>
+				<small>&copy; 2019 Ivette Cortez</small>
+			</footer>
+			<script src = "asg4.js"></script>
+		</body>
+
+	</html>

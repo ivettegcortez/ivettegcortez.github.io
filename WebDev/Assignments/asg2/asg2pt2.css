@@ -1,0 +1,74 @@
+/*css stylesheet for js css*/
+/*css for assignment 2*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&family=Roboto&display=swap');
+
+
+body{
+	padding:0px;
+	margin:0px;
+}
+header{
+	font-family: 'Lemonada', cursive;
+	background-color: #5290f2;
+	padding:10px;
+	text-align: center;
+	font-size: 20px;
+}
+
+main{
+	margin:25px;
+	padding:20px;
+}
+h1{
+	color: white
+}
+p{
+	line-height: 1.5em;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+img{
+	display: block;
+	margin:auto;
+}
+.nav{
+	display: flex;
+	justify-content: flex-end;
+}
+a{
+	margin:1em;
+}
+footer{
+	background-color: black;
+	color:white;
+	font-size: 1em;
+	margin:0em;
+	padding:2em;
+	text-align: center;
+}
+a:link, a:visited{
+	color: pink;
+	text-decoration: none;
+}
+a:hover{
+	color:gold;
+}
+
+a:active{
+	color:red;
+}
+@media only screen and (max-width: 600px) {
+  body{
+  	display: block;
+  }
+  img{
+  	width:300px;
+  	height:200px;
+  }
+
+}
+
+

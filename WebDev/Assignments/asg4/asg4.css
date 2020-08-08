@@ -1,0 +1,135 @@
+@font-face{
+	font-family: neo-latina-demo-FFP;
+	src:url(neo-latina-demo-FFP.ttf);
+}
+
+body{
+	margin:0;
+	padding:0;
+	line-height: 1.5em;
+}
+header{
+	background-color: black;
+	text-align: center;
+	color:white;
+	padding:3em;
+}
+
+.links{
+	display: flex;
+	justify-content: flex-end;
+}
+
+main{
+	margin:3em;
+	text-align: center;
+}
+h1{
+	font-size: 3em;
+	font-family: neo-latina-demo-FFP;
+}
+h2{
+	font-family: neo-latina-demo-FFP;
+}
+img{
+	width:300px;
+	height:300px;
+	margin: auto;
+	margin:2em;
+}
+#ticketbuy{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	padding:3em;
+}
+
+.ticketsearch{
+	margin-top: 9em;
+	text-align: left;
+	margin-left: 40%;
+}
+.ticketsearch label{
+	font-weight: bold;
+}
+fieldset{
+	text-align: left;
+	margin-left: 1em;
+	line-height: 1.5em;
+	font-family: neo-latina-demo-FFP;
+}
+footer{
+	background-color: black;
+	color:white;
+	text-align: center;
+	margin-top: 2em;
+	padding:2em;
+}
+#output{
+	text-align: left;
+	margin-left: 20%;
+}
+li{
+	list-style: none;
+}
+#home{
+	display: flex;
+	justify-content: flex-end;
+}
+#list li{
+	border-style: groove;
+	border-color: gold;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: neo-latina-demo-FFP;
+	padding:1em;
+	text-shadow: 2px 2px 1px #d18843;
+	/*orange redish*/
+
+}
+.newchange{
+	background-color: #52c7de;
+	/*blueish teal*/
+	color:white;
+}
+
+a:link, a:visited{
+	color:gold;
+	text-decoration: none;
+}
+
+a:active, a hover{
+	color:#e65069;
+	/*pinkish red*/
+}
+
+@media only screen and (max-width:600px){
+	footer, header{
+		background-color: #5882f5;
+		/*blueish indigo*/
+		
+	}
+	body{
+		display: block;
+	}
+	#ticketbuy{
+		display: block;
+		margin:0;
+	}
+	img{
+		width: 150px;
+		height: 150px;
+	}
+	h1{
+		line-height: 1.5em;
+	}
+	.ticketsearch{
+		margin-top: 3em;
+		margin-left: 3em;
+	}
+
+
+
+
+}
+
+

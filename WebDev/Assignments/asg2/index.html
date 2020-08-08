@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<title>Assignment 2</title>
+		<link rel = "stylesheet" href = "asg2.css">
+		<link rel = "icon" type = "image/png" href = "../../pics/logo.png">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	</head>
+
+	<body>
+		<header>
+			<div class="nav">
+				<a href = "../../index.html">Back</a>
+			</div>
+			<h1>Welcome!</h1>
+		</header>
+		<main>
+			<p>Below are three different parts of fun activities you can interact with. If you want a more serious layout click Dark Mode. To return to the light hearted layout just click Light Mode.</p>
+			<button class = "lightswitch" onclick = "darkMode()">Dark Mode</button>
+			<button class = "lightswitch" onclick = "lightMode()">Light Mode</button>
+
+			<h2>Part 1: Vacation Game</h2>
+			<p>Hi! Are you ready to see what prize you can win? Here, you have been granted the ability to win a prize in order to destress in these times of hecticness.</p>
+
+
+			<p>The prizes will be chosen at random and involve different countries to vacation at with a free flight.<br>Click below to start!</p>
+
+			<button onclick = "randArray()">Start</button>
+			<p id="show"></p>
+			<button onclick="showb()" id="showButton">Win a Prize</button>
+			<div id = "prize">
+				<!-- in here is displayed the winning response -->
+			</div>
+
+
+			<!-- swapping the images 1 & 2 -->
+
+			<h2>Part 2: Pokemon Swap</h2>
+			<h3><em>(Click on images to swap them)</em></h3>
+			<div id = "pokemoncontainer">
+
+			<img src = "pics/pika.jpeg" onclick = "swapI()" id = "img1" width = "400" height = "349" alt = "Pikachu">
+			<p id = "p1" onclick = "swapT()">One of the pokemons displayed in the pictures is called a Pikachu. Pikachu has a lot of power within the Pokemon world. Pikachu is an electric type pokemon, with a strong passion to win, according to the TV shoes. Pikachu is Ash's loyal pokemon and never seems to let him down. Pikachu is cute and cuddly as well, which is why everybody wants a Pikachu in their life.</p>
+			<img src = "pics/squirtlesquad.png" onclick = "swapI()" id = "img2" width = "400" height = "300" alt = "Squirtles">
+				<p id = "p2" onclick = "swapT()">The other picture displays a pokemon kind named Squirtle. Squirtle is the second most adorable pokemon in comparison to Pikachu. A group of squirtles are displayed in the picture, and together they are called the Squirtle Squad. Squirtle is a water type pokemon. He comes in real handy in the shows and is also really loyal to his pokemon trainer, Ash.</p>
+
+		</div>
+
+		<h2>Part 3: Llama Llama</h2>
+		<h3><em>(Click on images to learn more about Llamas)</em></h3>
+			<img onclick = "newDoc()" src = "pics/llamas.jpg" width = "450" height = "225" alt = "Llamas">
+
+		<h2>Part 4: Conversions</h2>
+		<p>This is an application that converts kilograms to pounds! Insert how many kilograms you would like to convert to pounds.</p>
+
+			<!-- form goes here -->
+			<form id = "form" onsubmit = "return false;">
+					<label for = "firstname">First Name:</label>
+						<input type = "text" name = "firstname" id = "firstname" required >
+					<label for = "kg">Kilograms:</label>
+						<input type = "number" name = "kg" required id = "kg">
+					<button onclick = "convert()">Convert</button>
+					<textarea rows = "5" cols = "100" id = "textarea"></textarea>
+			</form>
+			
+		</main>
+			<footer>
+				<p class = "pfoot"><em>Live your life.</em></p>
+				<p class = "pfoot">&copy; 2019 Ivette Cortez</p>
+			</footer>
+		<script src = "js/jquery-3.3.1.min.js"></script>
+		<script src = "asg2.js"></script>
+	</body>
+
+</html>

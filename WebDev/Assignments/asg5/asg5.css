@@ -1,0 +1,81 @@
+/*css for assignment 5*/
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&family=Roboto&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+}
+header{
+	background-color: pink;
+	font-family: 'Lemonada', cursive;
+	padding:10px;
+}
+header > a{
+	display: flex;
+	justify-content: flex-end;
+	margin:.3em;
+}
+main{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+img{
+	display: flex;
+	margin:auto;
+}
+button{
+	margin:1em;
+	background-color: pink;
+	border-radius: 30px;
+	padding:1em;
+}
+
+#animatebox{
+	display: flex;
+    flex-direction: row-reverse;
+}
+
+#box{
+	background-color: pink;
+	right: 0;
+	height: 120px;
+	width: 120px;
+	margin:30px 0px;
+}
+footer{
+	background-color: pink;
+	margin-top: 2em;
+	padding:1em;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*link styles*/
+
+a:link, a:visited{
+	color:purple;
+	text-decoration: none;
+}
+a:active, a:hover{
+	opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 600px){
+	header > a{
+		margin:0;
+	}
+	p{
+		margin:2em;
+	}
+	#box{
+		background-color: pink;
+		height: 150px;
+		width: 130px;
+		margin:0;
+	}
+	h1{
+		text-align: center;
+	}
+}

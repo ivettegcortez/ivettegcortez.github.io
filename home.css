@@ -1,0 +1,206 @@
+/*css for home page*/
+@font-face{
+	font-family: Multicolore;
+	src: url(fonts/Multicolore.otf);
+	font-family: Rounded Elegance;
+	src: url(fonts/Rounded_Elegance.ttf);
+	font-family: Giorgio-Thin;
+	src: url(fonts/Giorgio-Thin.ttf);
+
+}
+
+body{
+	padding:0;
+	margin:0;
+}
+
+header{
+	background-color: #92E6DD;
+	padding:30px;
+	font-size: 20px;
+
+}
+#name{
+	color:white;
+}
+h1{
+	font-family: Multicolore;
+}
+.title{
+	color:#92E6DD;
+	text-align: center;
+	font-size: 40px;
+}
+
+
+/*navigation bar*/
+.topnav{
+	overflow: hidden;
+	margin-left: 33em;
+	font-family: Giorgio;
+}
+
+.topnav a{
+	color:white;
+	padding:15px;
+	float: left;
+	text-decoration: none;
+
+}
+.topnav a.current{
+	color:#707070;
+}
+
+.topnav a:hover{
+	color:gold;
+}
+
+/*middle part of page*/
+#picsection{
+	height:600px;
+	width:100vw;
+	background:black;
+	overflow: hidden;
+	position: relative;
+}
+#countrypic{
+	object-fit: cover;
+	opacity: 0.4;
+}
+.covertext{
+	font-family: Giorgio-Thin;
+	color: white;
+	position: absolute;
+	top:20px;
+	margin-right: 30px;
+	margin-left: 30px;
+	left:900px;
+	line-height: 28px;
+}
+
+/*projects*/
+.homepics{
+	width:400px;
+	height: 300px;
+	/*padding:50px;*/
+	/*margin:50px;*/
+
+}
+
+#webandphoto{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.img-wrapper{
+	position: relative;
+	margin: auto;
+}
+
+.img-overlay{
+	position: absolute;
+	width: 400px;
+	top:205px;
+	/*left:50px;*/
+	height:95px;
+  	background-color: black;
+  	opacity: 0.5;
+  	color: white;
+  	font-family: Multicolore;
+}
+.img-overlay:hover{
+	animation: slideBox .5s forwards;
+}
+
+.sec-titles{
+	text-align: center;
+	margin-top: 45px;
+}
+.page-description{
+	text-align: center;
+	font-size: 20px;
+	font-family: Giorgio;
+	padding: 50px;
+	margin-left: 175px;
+	margin-right: 175px;
+	line-height: 24px;
+}
+
+@keyframes slideBox{
+	0%{transform:translateY(0px) scaleY(1);}
+	100%{transform: translateY(-105px) scaleY(3.15);}
+}
+
+
+
+/*bottom portion*/
+footer{
+	background-color:black;
+	color:white;
+
+}
+footer p{
+	text-align: center;
+}
+
+#copyright{
+	padding-bottom:15px;
+	margin: 0px;
+	font-family: Giorgio-Thin;
+}
+#insta, #linkedin{
+	width:50px;
+	margin:15px;
+
+}
+
+#linkedin{
+	border-radius: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+	#countrypic{
+		display: none;
+	}
+	#picsection{
+		background: none;
+		height: 350px;
+	}
+	.covertext{
+		color:black;
+		left:0;
+		padding:30px;
+		text-align: center;
+	}
+
+
+	.page-description{
+		margin:5px;
+	}
+
+	#webandphoto{
+		display: block;
+		text-align: center;
+	}
+
+	.homepics{
+		width:300px;
+		height:200px;
+	}
+	.img-overlay{
+		width:300px;
+		z-index: 10;
+		top:105px;
+		left: 52px;
+	}
+
+	.topnav{
+		margin:0;
+	}
+	.img-wrapper{
+		justify-content: center;
+		margin-left: 10px;
+	}
+}

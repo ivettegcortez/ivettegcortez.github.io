@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+	<html lang = "en">
+		<head>
+			<meta charset="utf-8">
+			<title>Ivette Cortez</title>
+			<link rel = "stylesheet" href = "home.css">
+			<link rel = "icon" type = "image/png" href = "pics/logo.png">
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		</head>
+
+
+		<body>
+			<header>
+				<h1 id = "name">Ivette Cortez</h1>
+				<div class = "topnav">
+					<a class = "current">Home</a>
+					<a href = "AboutMe/aboutme.html">About Me</a>
+					<a href = "WebDesign/webdesign.html">Web Design</a>
+					<a href = "Photography/photography.html">Photography</a>
+					<a href = "Contact/contact.html">Contact</a>
+				</div>
+			</header>
+
+			<div id = "picsection">
+				<img id = "countrypic" src = "pics/me5-2.jpg">
+				<section class = "covertext">
+					<h2>Hi! Welcome to my home page! Here, you can explore my different interests of web design and photography, as well as get to know me a little better. If you have any questions feel free to contact me!</h2>
+				</section>
+			</div>
+
+
+			<h1 class = "title">Projects</h1>
+			<div id = "webandphoto">
+				<section class = "img-wrapper"  onclick = "webdesign()">
+					<img class = "homepics" src = "pics/web-design-logo.jpg" alt = "Web Design">
+					<div class = "img-overlay"><h2 class = "sec-titles">Web Design</h2></div>
+				</section>
+
+				<section class = "img-wrapper" onclick = "photography()">
+					<img class = "homepics" src = "pics/siena-lay.jpg" alt = "Portraits">
+					<div class = "img-overlay"><h2 class = "sec-titles">Photography</h2></div>
+				</section>
+					
+			</div>
+
+			<p class = "page-description">
+				Above are both my specialities. I have my web design projects that I’ve done either for myself or for my classes at NYU.  My photography page is for pictures I’ve taken and edited. Click on either to learn more!
+
+			</p>
+			
+
+
+
+			<footer>
+				<p>
+					<a href = "https://www.linkedin.com/in/ivettecortez/"><img id = "linkedin" src = "pics/linkedin.png"></a>
+					<a href = "https://instagram.com/capturethisivette?igshid=db3lghgxvixt"><img id = "insta" src = "pics/instagram.png"></a>
+				</p>
+				<p id = "copyright">
+					&copy; Ivette Cortez
+				</p>
+			</footer>
+			<script src = "jquery-3.5.1.min.js"></script>
+			<script src = "home.js"></script>
+
+		</body>
+
+</html>

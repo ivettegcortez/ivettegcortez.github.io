@@ -90,6 +90,7 @@ h1{
 #webandphoto{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	margin-bottom: 75px;
 }
 
 .img-wrapper{
@@ -120,7 +121,6 @@ h1{
 	text-align: center;
 	font-size: 20px;
 	font-family: Giorgio;
-	padding: 50px;
 	margin-left: 175px;
 	margin-right: 175px;
 	line-height: 24px;
@@ -205,4 +205,8 @@ footer p{
 	.img-wrapper{
 		margin-bottom: 30px;
 	}
+	.img-overlay:hover{
+	animation:none;
+	}
+	
 }

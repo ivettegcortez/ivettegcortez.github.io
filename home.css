@@ -181,8 +181,8 @@ footer p{
 	}
 
 	#webandphoto{
-		display: block;
-		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 
 	.homepics{
@@ -192,15 +192,13 @@ footer p{
 	.img-overlay{
 		width:300px;
 		z-index: 10;
-		top:105px;
-		left: 52px;
+		top: 105px;
 	}
 
 	.topnav{
 		margin:0;
 	}
-	.img-wrapper{
-		justify-content: center;
-		margin-left: 10px;
+	#img-wrapper{
+		margin-bottom: 15px;
 	}
 }

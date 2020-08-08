@@ -1,0 +1,190 @@
+/*tropical life css*/
+body {
+  	margin: 0;
+  	/*background-color: #b0def5;*/
+  	background:linear-gradient(#b0def5, white);
+  	height:230px;
+  	width:100vw;
+	overflow: hidden;
+}
+audio{
+	display: none;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+#c1{
+	position: absolute;
+	top:460px;
+	height: 330px;
+}
+#c2{
+	position: absolute;
+	top:190px;
+	background-image: url('media/waves.svg');
+	z-index: 6;
+	animation: waveMove 5s alternate infinite;
+
+}
+
+#curves{
+	position: absolute;
+	top:400px;
+	left:0px;
+	fill:white;
+	z-index: 5;
+}
+
+
+#waveEnd{
+	position: absolute;
+	top:150px;
+	left:0px;
+	fill:white;
+	filter: opacity(70%);
+	animation: waveMove 5s alternate infinite;
+}
+
+#cloud{
+	fill:white;
+	z-index: 15;
+	position: absolute;
+	left:30px;
+	top:10px;
+	width:150px;
+	height:150px;
+}
+
+#treestem{
+	position: absolute;
+	left:1165px;
+	top:280px;
+	width:200px;
+	height:470px;
+	z-index: 15;
+	transform:rotateZ(-20deg);
+}
+
+#treestem2{
+	position: absolute;
+	left:1170px;
+	top:250px;
+	width:200px;
+	height:470px;
+	z-index: 15;
+
+}
+
+#treestemLeft{
+	position: absolute;
+	left:40px;
+	top:220px;
+	width:200px;
+	height:470px;
+	z-index: 15;
+	/*transform:rotateZ(-20deg);*/
+}
+
+#treestem2Left{
+	position: absolute;
+	left:10px;
+	top:240px;
+	width:200px;
+	height:470px;
+	z-index: 15;
+}
+
+
+#treetop{
+	position: absolute;
+	left:1090px;
+	top:100px;
+	width:200px;
+	height:470px;
+	z-index: 17;
+	transform:rotateZ(-20deg);
+	animation:shake 2s alternate infinite;
+}
+
+#treetop2{
+	position: absolute;
+	left:1165px;
+	top:90px;
+	width:200px;
+	height:470px;
+	z-index: 16;
+	animation:shake2 2s alternate infinite;
+}
+
+#treetopLeft{
+	position: absolute;
+	left:0px;
+	top:70px;
+	width:200px;
+	height:470px;
+	z-index: 16;
+	animation:shake2 2s alternate infinite;
+}
+
+#treetop2Left{
+	position: absolute;
+	left:30px;
+	top:50px;
+	width:200px;
+	height:470px;
+	z-index: 16;
+	animation:shake2 2s alternate infinite;
+}
+
+@keyframes shake2{
+	0%{transform:rotateZ(0deg);}
+	50%{transform:rotateZ(5deg);}
+	100%{transform:rotateZ(-5deg);}
+}
+
+@keyframes shake {
+	0%{transform:rotateZ(-20deg);}
+	50%{transform:rotateZ(-30deg);}
+	100%{transform:rotateZ(-10deg);}
+}
+
+@keyframes waveMove{
+	0%{transform:translateY(-5px);}
+	50%{transform:translateY(5px);}
+	100%{transform:translateY(-5px);}
+}
+
+#seagull{
+	position: absolute;
+	width:290px;
+	height:290px;
+	top:500px;
+	left:600px;
+}
+
+#hulaNecklace{
+	position: absolute;
+	top:585px;
+	left:655px;
+	width:150px;
+	height:150px;
+}
+
+#flower{
+	position: absolute;
+	top:0px;
+	left:655px;
+	width:100px;
+	height:100px;
+	animation:float 5s forwards;
+	z-index: 20;
+}
+
+@keyframes float{
+	0%{transform:translateY(-30px) rotateZ(0deg);}
+	100%{transform:translateY(570px) rotateZ(360deg);}
+}
+
+
+

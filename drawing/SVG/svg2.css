@@ -1,0 +1,53 @@
+@font-face{
+	src:url('Borg.ttf');
+	font-family: 'Borg';
+}
+
+body{
+	background-color: pink;
+	font-family: 'Borg';
+	letter-spacing: .15em;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	font-size: 4em;
+}
+h2{
+	padding:1em;
+	margin:0;
+
+	text-align: center;
+	font-size: 2em;
+
+}
+.art{
+	height:10em;
+	width:15em;
+	display: grid;
+	margin:auto;
+	fill:#66acde;
+	/*baby blue*/
+
+}
+.box{
+	background-color: white;
+	border-radius: 30px;
+	width:275px;
+	height: 250px;
+	margin:auto;
+	margin-top: 1.5em;
+	padding:1.5em;
+}
+
+a {
+	font-size: 1.5em;
+}
+a:link, a:visited{
+	text-decoration: none;
+    color:white;
+}
+a:hover, a:active{
+	color:gold;
+}

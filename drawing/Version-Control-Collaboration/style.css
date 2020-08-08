@@ -1,0 +1,216 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#snow{
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  background-position: center;
+  z-index:7;
+}
+
+#fallingrose{
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  background-position: center;
+  z-index:5;
+  mix-blend-mode: lighten;
+
+}
+
+.tokyo{
+  position: absolute;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* cover the parent proportionally*/
+  filter: grayscale(75%);
+  z-index: 3;
+
+
+}
+
+
+.rain{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: soft-light;
+  z-index: 8;
+}
+
+#rose1{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left:50px;
+  mix-blend-mode: screen;
+  z-index: 10;
+}
+
+.rose:hover{
+  filter: drop-shadow(15px 15px 15px red) invert(70%);
+
+}
+
+#rose2{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right:50px;
+  top:585px;
+  mix-blend-mode: screen;
+  z-index: 10;
+
+}
+
+.animation1{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  mix-blend-mode: lighten;
+  left:1100px;
+  z-index: 8
+}
+
+.animation2{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  mix-blend-mode: lighten;
+  left:800px;
+  z-index: 8;
+}
+
+.animation3{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  mix-blend-mode: lighten;
+  left:500px;
+  z-index: 8;
+}
+
+.animation4{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  mix-blend-mode: lighten;
+  left:200px;
+  z-index: 8;
+}
+
+.animation5{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  mix-blend-mode: lighten;
+  top:200px;
+  z-index: 8;
+}
+
+.animation6{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  mix-blend-mode: lighten;
+  top:500px;
+  z-index: 8;
+}
+
+@keyframes moveblock1{
+  0%{transform:translateX(0px);}
+  100%{transform:rotate(30deg) translateX(500px);}
+}
+@keyframes moveblock2{
+  0%{transform:translateX(0px);}
+  100%{transform:rotate(30deg) translateX(850px);}
+}
+@keyframes moveblock3{
+  0%{transform:translateX(0px);}
+  100%{transform:rotate(30deg) translateX(1150px);}
+}
+@keyframes moveblock4{
+  0%{transform:translateX(0px);}
+  100%{transform:rotate(30deg) translateX(1500px);}
+}
+@keyframes moveblock5{
+  0%{transform:translateX(-70px);}
+  100%{transform:rotate(30deg) translateX(1800px);}
+}
+@keyframes moveblock6{
+  0%{transform:translateX(-170px);}
+  100%{transform:rotate(30deg) translateX(1600px);}
+}
+.animation1{
+  animation-name: moveblock1;
+  animation-duration: 3s;
+  /*animation-fill-mode: forwards;*/
+}
+
+.animation2{
+  animation-name: moveblock2;
+  animation-duration: 4s;
+  /*animation-fill-mode: forwards;*/
+}
+
+.animation3{
+  animation-name: moveblock3;
+  animation-duration: 4s;
+  /*animation-fill-mode: forwards;*/
+}
+
+.animation4{
+  animation-name: moveblock4;
+  animation-duration: 4s;
+  /*animation-fill-mode: forwards;*/
+}
+
+.animation5{
+  animation-name: moveblock5;
+  animation-duration: 4s;
+  /*animation-fill-mode: forwards;*/
+}
+
+.animation6{
+  animation-name: moveblock6;
+  animation-duration: 4s;
+  /*animation-fill-mode: forwards;*/
+}
+
+
+
+/*#figure{
+  width: 200px;
+  height: 200px;
+  z-index: 5;
+  position: absolute;
+  left:510px;
+  top:350px;
+}*/
+
+#figure1{
+  width: 200px;
+  height: 200px;
+  z-index: 5;
+  position: absolute;
+  left:510px;
+  top:350px;
+  filter: opacity(0.5);
+
+}
+
+audio {
+  position: absolute;
+  bottom:30px;
+  left:30px;
+  opacity: 0.4;
+  z-index: 10;
+}
+
+audio:hover{
+  opacity: 1;
+}

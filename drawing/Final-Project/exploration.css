@@ -1,0 +1,78 @@
+/*main css for the final project*/
+
+body{
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+
+#container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 0;
+	padding:0;
+}
+
+
+canvas{
+	/*border: 2px solid blue;*/
+	height: 100vh;
+	width: 480px;
+}
+
+
+#c1{
+	filter:hue-rotate(140deg);
+
+}
+#c2{
+	filter:hue-rotate(150deg);
+
+}
+#c3{
+	filter:hue-rotate(320deg);
+}
+
+
+#feather{
+	width:400px;
+	height:200px;
+	position: absolute;
+	left:30px;
+	top:110px;
+	fill: gray;
+}
+
+#flower{
+	position:absolute;
+	width:220px;
+	height:220px;
+	left:615px;
+	top:75px;
+	fill:red;
+}
+
+#leaf{
+	position:absolute;
+	width:300px;
+	height:250px;
+	left:1045px;
+	top:85px;
+	fill:orange;
+}
+
+
+@keyframes moveExpand{
+	0%{transform:translateY(0px) scale(1) rotate(0deg);}
+	65%{transform:translateY(400px) rotate(180deg);}
+	100%{transform: scale(6) rotate(360deg);}
+
+}
+
+
+
+
+
+
+
+

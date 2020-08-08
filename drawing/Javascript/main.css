@@ -1,0 +1,65 @@
+/*css for javascript part 1*/
+
+body{
+	margin:0;
+	padding:0;
+}
+
+#container{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	perspective: 600px;
+}
+
+.dogright, .catleft{
+	width:150px;
+	height: 150px;
+	border-radius: 100px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	padding:15px;
+	/*filter:drop-shadow(8px 8px 10px gray);*/
+	transition-property: width, height;
+	transition-duration:2s;
+}
+
+
+
+.dogright:active, .catleft:active{
+	/*filter:hue-rotate(90deg);*/
+	width: 250px;
+	height: 250px;
+}
+
+
+@keyframes moveright{
+	from{transform:translateX(-1450px);}
+	to{transform:translateX(1450px);}
+}
+
+/*.dogright{
+
+	animation: moveright 13s infinite alternate linear;
+}*/
+
+@keyframes moveleft{
+	from{transform:translateX(1450px);}
+	to{transform:translateX(-1400px);}
+}
+
+/*.catleft{
+	animation: moveleft 13s infinite alternate linear;
+}*/
+
+#pt2{
+	text-align: center;
+}
+
+a:link{
+	text-decoration: none;
+
+}
+
+
+
+

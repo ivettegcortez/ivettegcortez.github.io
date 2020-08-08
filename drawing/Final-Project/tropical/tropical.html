@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+	<html lang = "en">
+		<head>
+			<title>Tropical Life</title>
+			<meta charset = "utf-8">
+			<link rel = "stylesheet" href = "tropicalcss.css">
+
+		</head>
+
+
+		<body>
+			<canvas id = "c1"></canvas>
+			<canvas id = "c2"></canvas>
+
+			<div style = "display:none">
+				<img id = "sand" src = "media/sand.jpg" alt = "Sand">
+
+			</div>
+
+			<audio autoplay controls>
+				<source src = "media/tropicalSounds.mp3" type = "audio/mpeg">
+
+			</audio>
+			
+
+			<svg version="1.1" id="waveEnd" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			viewBox="0 0 792 294.35" enable-background="new 0 0 792 294.35" xml:space="preserve">
+				<path d="M-0.33,170.96c0,0,16.72-1.55,36.48,0.13c20.31,1.73,49.01-2.58,62.39,0.45c16.9,3.84,55.22,0.32,75.04-0.97
+				s83.57-0.07,108.37,6.46c18.73,4.93,98.89-4.33,150.13-7.05c46.2-2.45,46.18,4.9,84.78,5.27c38.6,0.37,126.09-10.88,144.87-5.06
+				s64.34,10.08,96.59,8.71c12.11-0.52,34.01-0.91,34.01-0.91v37.8c0,0-50.84,7.87-37.11-2.26c6.72-4.96-54.53,10.65-40.85-0.46
+				c15.63-12.69-35.45,6.58-44.71,5.65c-31.15-3.13-12.98-11.83-46.87-7.98c0,0-55.76,14.64-60.63,0.85
+				c-3.06-8.68-40.5,9.23-54.08,1.91c-30.74-16.57-100.72,14.04-96.72,0.7c1.93-6.44-7.06-8.48-40.66,1.68
+				c-21.79,6.59-22.35-7.76-41.77-4.26c-46.36,8.37-79.39,8.62-67.57,0.23c10.01-7.11-3.5-7.95-19.41-1.27
+				c-7.27,3.06-25.53,7.57-38.04,5.45c-11.18-1.9,3.92-18.68-46.14-4.74c-20.6,5.74-18.59-1.83-35.82,2.46
+				c-51.67,12.88-8.11-7.58-36.14-6.14c-7.57,0.39-49.84,12.17-38.11,5.6c17.92-10.04-36.85,3.63-21.31-5.93
+				c7.21-4.44-13.64-3.27-26.4-0.36L-0.33,170.96z"/>
+			</svg>
+
+			<img id = "cloud" src = "media/cloud.svg" alt = "Cloud">
+
+
+
+			<!-- trees -->
+			<img id = "treestem" src = "media/treeStem.svg" alt = "TreeStem">
+			<img id = "treestem2" src = "media/treeStem.svg" alt = "TreeStem">
+
+			<img id = "treetop" src = "media/treeTop.svg" alt = "TreeTop">
+			<img id = "treetop2" src = "media/treeTop.svg" alt = "TreeTop">
+
+			<img id = "treestemLeft" src = "media/treeStem.svg" alt = "TreeStem">
+			<img id = "treestem2Left" src = "media/treeStem.svg" alt = "TreeStem">
+
+			<img id = "treetopLeft" src = "media/treeTop.svg" alt = "TreeTop">
+			<img id = "treetop2Left" src = "media/treeTop.svg" alt = "TreeTop">
+
+
+			<!-- seagull -->
+
+			<svg version="1.1" id="seagull" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			viewBox="0 0 196.85 255.71" enable-background="new 0 0 196.85 255.71" xml:space="preserve">
+			<defs>
+			  <pattern id="seagullfur" patternUnits="userSpaceOnUse" width="300" height="300">
+			    <image xlink:href="media/seagullfur.jpg" x="0" y="0" width="500" height="311" />
+			  </pattern>
+			</defs>
+			<path d="M75.14,71.21c0,0,2.22-37.69,26.6-38.24c0,0,23.28-1.87,27.45,15.82c0,0,6,4.84,15.97,9.06c0,0,12.23,2.73,12.23,15.39
+				c0,0-14.08-12.01-29.04-10.35c0,0,12.75,16.63,19.4,21.62c0,0,4.43,4.99,3.33,8.31c0,0-8.31-3.91-18.84-11.38
+				c0,0-9.98-6.92-19.95-5.25c0,0,0.55,31.59,3.6,42.68c0,0,1.86,14.23,4.63,17.56c0,0,4.51,4.61,6.18,12.92s11.64,21.06,11.09,31.59
+				c0,0,4.43,23.83-13.86,32.15c-18.29,8.31-14.97,14.97-16.07,19.4c0,0-2.22,12.75,4.43,10.53c0,0-4.99,1.63-10.53,0.26
+				c0,0,4.43-16.89-3.33-24.65c0,0,0.55-3.88-14.97,2.77c0,0-6.65,0-13.3-1.66c0,0-9.98,1.06,0,24.09c0,0-2.77,1.36-8.31,0
+				c0,0,0.55-15.77-9.42-20.76c0,0-6.47-2.15-9.42-6.1c0,0-10.49-0.97-14.41-1.11c-4.16-0.15-10.53-27.16,0-54.87
+				c0,0,5.54-24.94,26.6-30.48C55.19,130.51,75.69,86.73,75.14,71.21z" fill = "url(#seagullfur)"/>
+			</svg>
+
+
+			<!-- hula flower necklace -->
+			<img id = "hulaNecklace" src = "media/hulaflower.svg" alt = "Flower Necklace">
+
+
+			<svg version="1.1" id="flower" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			viewBox="0 0 82.07 74.47" enable-background="new 0 0 82.07 74.47" xml:space="preserve">
+			<path fill="#EF4136" d="M33.67,40.12c0,0-7.04-0.98-9.38,2.15s-2.93,4.89-1.37,6.06s3.71,3.32,3.71,5.47c0,2.15,3.32,2.35,5.86,0
+				c2.54-2.35,4.3-4.3,5.47-8.99c0,0,2.74,4.94,1.17,10.68s9.97,3.79,10.36-1.1c0.39-4.89-2.93-9.77-7.62-10.94
+				c0,0,5.14-1.37,7.65,3.71s8.57-3.61,5.05-7.18c-3.52-3.57-6.06-4.16-11.14-2.98c0,0,7.04-11.14-3.13-12.12s-5.67,3.91-5.08,4.69
+				c0.59,0.78,2.15,3.91,2.15,5.47c0,0-3.91-11.14-10.75-8.01s-3.13,8.4-2.15,8.79c0.98,0.39,4.3,0.59,6.06,1.56
+				C32.3,38.36,31.91,37.97,33.67,40.12z"/>
+			</svg>
+
+
+
+
+
+			<script src = "tropicaljs.js"></script>
+		</body>
+
+
+	</html>
+
+
+

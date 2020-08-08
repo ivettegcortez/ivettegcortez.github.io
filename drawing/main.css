@@ -1,0 +1,91 @@
+@font-face{
+	src:url('fonts/Thicker-Regular-trial.ttf');
+	font-family: 'Thicker Regular Trial';
+}
+
+
+body{
+	margin:0;
+	padding:0;
+	font-family: Thicker Regular Trial;
+	line-height: 1.5em;
+
+}
+
+header{
+	padding:2em;
+	text-align: center;
+	font-size: 1.5em;
+}
+#home{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#projects{
+	list-style: none;
+	font-size: 20px;
+	display: grid;
+	grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+	grid-column-gap: 2em;
+	grid-row-gap: 2em;
+}
+#one{
+	grid-column:2/3;
+}
+#three{
+	grid-column:2/3;
+	grid-row:2/3;
+}
+#four{
+	grid-column:3/4;
+	grid-row:2/3;
+}
+#five{
+	grid-column: 2/3;
+	grid-row:3/4;
+}
+#six{
+	grid-column: 3/4;
+	grid-row:3/4;
+}
+#seven{
+	grid-column: 2/3;
+	grid-row:4/5;
+}
+#eight{
+	grid-column: 3/4;
+	grid-row:4/5;
+}
+
+li{
+	padding:3.5em;
+	border-radius: 30px;
+	background-color: black;
+	opacity: 0.8;
+	color:white;
+	text-align: center;
+
+}
+
+footer{
+	margin-top:7em;
+	text-align: center;
+	background-color: black;
+	color:white;
+	padding:2em;
+}
+
+
+a:visited, a:link{
+	color:gold;
+	text-decoration: none;
+}
+a:hover{
+	color:pink;
+}
+
+
+
+
+

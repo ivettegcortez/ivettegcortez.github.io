@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+	<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<title>Bird Css Animation</title>
+
+	<style>
+		body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('sparkles.jpeg');
+        background-size: cover;
+      }
+
+      #whole {
+        width: 150px;
+        height: 150px;
+        perspective: 700px;
+        /*the smaller the closer to the user it is*/
+        perspective-origin: center top;
+        
+      }
+
+      .bird {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+      }
+
+      .wing{
+      	position: absolute;
+        transform-origin: top left;
+        width: 300px;
+        height: 60px;
+        border-radius: 100px; 
+        /* make squares into circles */
+        opacity: 0.7;
+        background: blue;
+      	background-image: url('sky.jpeg');
+      	background-size: 500px;
+        left:95px;
+        top:-85px;
+        transition: background-image 0.2s ease-in-out;
+
+      }
+
+      /*center of the bird*/
+      .face{
+        position:absolute;
+        width:100px;
+        height:100px;
+        background-color: #846cad;
+        /*light purple*/
+        border-radius: 100px;
+        transform: translate(-100px, -55px);
+        background-image: url('purplesky.jpg');
+	
+      }
+
+
+      /*beak*/
+
+      .beak{
+      clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+      width: 50px;
+	    height: 50px;
+	    position: absolute;
+      background-image: url('purplesky.jpg');
+      transform: translate(-120px, -45px) rotate(45deg);
+	    
+
+      }
+
+    
+
+	  /*body circle*/
+	  .body{
+	  	position: absolute;
+        width: 300px;
+        height: 130px;
+        border-radius: 700px; 
+        background-color: #846cad;
+        transform: rotateZ(15deg) translate(-30px);
+        background-image: url('purplesky.jpg');
+	  }
+
+	  .tail{
+      clip-path: polygon(19% 39%, 8% 100%, 99% 33%);
+	  	width: 170px;
+	    height: 170px;
+	    position: absolute;
+      transform:translate(210px, -30px);
+      background-image: url('purplesky.jpg');
+	  }
+
+
+      /*wings*/
+      .wing:nth-child(5){
+      	transform: rotateZ(60deg) rotateX(20deg) translate(63px, 95px) rotateY(-30deg);
+      	width: 270px;
+      }
+
+      .wing:nth-child(6){
+      	transform: rotateZ(45deg) rotateX(20deg) translate(30px, 113px) rotateY(-30deg);
+      	width: 300px;
+      }
+
+      .wing:nth-child(7){
+      	transform: rotateZ(30deg) rotateX(20deg) translate(10px, 125px) rotateY(-30deg);
+      	width: 330px;
+      }
+
+      .wing:nth-child(8){
+      	transform: rotateZ(20deg) rotateX(20deg) translate(-30px, 125px) rotateY(-30deg);
+      	width: 360px;
+      }
+
+      .wing:nth-child(9){
+      	transform: rotateZ(60deg) rotateX(-20deg) rotateY(10deg) translate(63px, 95px) rotateY(30deg);
+      	width: 270px;
+      	background-color: blue;
+      }
+
+      .wing:nth-child(10){
+      	transform: rotateZ(45deg) rotateX(-20deg) rotateY(10deg) translate(30px, 113px) rotateY(30deg);
+      	width: 300px;
+      }
+
+      .wing:nth-child(11){
+      	transform: rotateZ(30deg) rotateX(-20deg) rotateY(10deg) translate(10px, 125px) rotateY(30deg);
+      	width: 330px;
+      }
+
+      .wing:nth-child(12){
+      	transform: rotateZ(20deg) rotateX(-20deg) rotateY(10deg) translate(-30px, 125px) rotateY(30deg);
+      	width: 360px;
+      }
+
+      /* animation */
+
+      /* @keyframes flybodyleft {
+      0%{transform: rotateZ(0deg) translate(-30px);}
+      100%{transform:rotateZ(5deg) translate(-1000px, -100px);}
+      }
+
+      #whole{
+        animation-name: flybodyleft;
+        animation-duration: 5s;
+      }*/
+
+      @keyframes appear {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      #whole {
+        animation-name: appear;
+        animation-duration: 2s;
+      }
+
+      @keyframes rotate {
+        from {transform: rotateY(0deg) rotateX(0deg);}
+        to {transform: rotateY(360deg) rotateX(360deg);}
+      }
+
+      .bird{
+        animation-name: rotate;
+        animation-duration: 4s;
+      }
+
+
+      @keyframes pulse {
+	    from {
+	        transform : scale(1);
+	        opacity   : 1;
+	    }
+	    50% {
+	        transform : scale(0.55);
+	        opacity   : 0.5;
+	    }
+	    to {
+	        transform : scale(1);
+	        opacity   : 1;
+	    }
+	}
+
+  	#whole:hover{
+  		animation-name: pulse;
+  		animation-duration: 2s;
+  	}
+    .wing:active{
+      background-image: url('purplesky.jpg')
+    }
+
+   
+
+ 
+  
+
+    /*@keyframes movewingone{
+      0%{
+        transform: rotateZ(60deg) rotateX(20deg) translate(63px, 95px) rotateY(-30deg);
+      }
+      50%{
+        transform: rotateZ(60deg) rotateX(20deg) translate(63px, 95px) rotateY(-100deg);
+      }
+      100%{transform:rotateZ(60deg) rotateX(20deg) translate(63px, 95px) rotateY(-30deg);}
+    }
+
+    .wing:nth-child(5){
+      animation-name: movewingone;
+      animation-duration: 3s;
+    }*/
+
+    header{
+      position: absolute;
+      top:20px;
+      left:20px;
+    }
+    a:link, a:visited{
+      text-decoration: none;
+      color:gold;
+    }
+    a:hover, a:active{
+      color:pink;
+    }
+	</style>
+
+	</head>
+
+
+	<body>
+    <header>
+      <a href = "../index.html">Home</a>
+    </header>
+		<div id = "whole">
+			<div class = "bird">
+				<div class = "face"></div>
+				<div class = "body"></div>
+				<div class = "beak"></div>
+				<div class = "tail"></div>
+				<div class = "wing"></div>
+				<div class = "wing"></div>
+				<div class = "wing"></div>
+				<div class = "wing"></div>
+				<div class = "wing"></div>
+				<div class = "wing"></div>
+				<div class = "wing"></div>
+				<div class = "wing"></div>
+
+
+			</div>
+		</div>
+	</body>
+
+
+</html>

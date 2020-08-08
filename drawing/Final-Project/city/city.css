@@ -1,0 +1,196 @@
+body{
+	margin:0;
+	padding:0;
+	width:100vw;
+	overflow: hidden;
+}
+canvas{
+	/*background-color: #193b61;*/
+	background: linear-gradient(#193b61, white);
+	margin:0;
+
+}
+audio{
+	position: absolute;
+	display: none;
+	top:0px;
+	left:0px;
+/*	top:650px;
+	left:10px;
+	mix-blend-mode: lighten;
+	z-index: 20;*/
+}
+
+@keyframes sparkle{
+	0%{opacity:1;}
+	100%{opacity: 0;}
+}
+.star{
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	position: absolute;
+	top:10px;
+	left:10px;
+	width:7px;
+	height:7px;
+	border-radius: 10%;
+	background-color:white;
+	z-index: 10;
+	animation: sparkle 0.4s alternate infinite;
+}
+
+.star:nth-child(2){
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	position: absolute;
+	top:40px;
+	left:220px;
+	width:7px;
+	height:7px;
+	border-radius: 10%;
+	background-color:white;
+	z-index: 10;
+	animation: sparkle 0.4s .3s alternate infinite;
+}
+
+.star:nth-child(3){
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	position: absolute;
+	top:25px;
+	left:450px;
+	width:7px;
+	height:7px;
+	border-radius: 10%;
+	background-color:white;
+	z-index: 10;
+	animation: sparkle 0.4s .2s alternate infinite;
+}
+
+.star:nth-child(4){
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	position: absolute;
+	top:20px;
+	left:750px;
+	width:7px;
+	height:7px;
+	border-radius: 10%;
+	background-color:white;
+	z-index: 10;
+	animation: sparkle 0.4s .2s alternate infinite;
+}
+
+.star:nth-child(5){
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	position: absolute;
+	top:50px;
+	left:925px;
+	width:7px;
+	height:7px;
+	border-radius: 10%;
+	background-color:white;
+	z-index: 10;
+	animation: sparkle 0.4s  .4s alternate infinite;
+}
+
+.star:nth-child(6){
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	position: absolute;
+	top:50px;
+	left:1175px;
+	width:7px;
+	height:7px;
+	border-radius: 10%;
+	background-color:white;
+	z-index: 10;
+	animation: sparkle 0.4s .3s alternate infinite;
+}
+
+.star:nth-child(7){
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	position: absolute;
+	top:35px;
+	left:1325px;
+	width:7px;
+	height:7px;
+	border-radius: 10%;
+	background-color:white;
+	z-index: 10;
+	animation: sparkle 0.4s .4s alternate infinite;
+}
+
+#reflection{
+	margin:0;
+	position: absolute;
+	top:400px;
+	left:0px;
+	width:1440px;
+	height:390px;
+	z-index: 11;
+
+}
+
+#water{
+	margin:0;
+	position: absolute;
+	top:400px;
+	left:-20px;
+	width:1485px;
+	height:390px;
+	z-index: 12;
+	opacity:0.5;
+	filter:brightness(50%);
+
+}
+
+.railing{
+	position: absolute;
+	top:710px;
+	left:0px;
+	width:1440px;
+	height:50px;
+	z-index: 13;
+	background-color:black;
+	background: linear-gradient(gray, black);
+
+}
+
+#bird{
+	position:absolute;
+	top:517px;
+	left:500px;
+	width:275px;
+	height:240px;
+	z-index: 15;
+	/*background-image: url('media/featherTexture.jpg');*/
+
+}
+#feather1{
+	position:absolute;
+	top:0px;
+	left:520px;
+	width:275px;
+	height:190px;
+	z-index: 13;
+	animation:fall 3s forwards;
+
+}
+@keyframes waves{
+	0%{transform:translate(0px, 0px);}
+	25%{transform:translate(15px, -3px);}
+	50%{transform:translate(-15px, 3px);}
+	75%{transform:translate(-30px, -3px);}
+	100%{transform:translate(15, 3);}
+}
+#water{
+	animation:waves 2s both infinite;
+
+}
+
+@keyframes fall{
+	0%{
+		transform:translateY(-30px) rotateZ(30deg);
+		opacity:1;
+	}
+	100%{transform: translateY(530px) rotateZ(580deg); opacity:0;}
+}
+
+
+

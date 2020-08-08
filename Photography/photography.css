@@ -535,7 +535,9 @@ footer p{
 		display: block;
 	}
 	#topdesc{
-		font-size: 16px;
+		font-size: 20px;
+		text-indent: 0px;
+		text-align: center;
 	}
 
 	.profpics{

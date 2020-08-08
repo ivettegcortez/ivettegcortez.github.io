@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Form</title>
+		<link rel = "stylesheet" href = "contact.css">
+		<link rel = "icon" type = "image/png" href = "../pics/logo.png">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	</head>
+
+
+	<body>
+		<header>
+			<h1 id = "name">Ivette Cortez</h1>
+				<div class = "topnav">
+					<a href = "../index.html">Home</a>
+					<a href = "../AboutMe/aboutme.html">About Me</a>
+					<a href = "../WebDesign/webdesign.html">Web Design</a>
+					<a href = "../Photography/photography.html">Photography</a>
+					<a class = "current">Contact</a>
+				</div>
+
+		</header>
+
+		<div id = "container">
+			<form method = "post" id = "form1" name = "form" action = "https://formspree.io/mvowlayp">
+				<div id = "form-inside">
+				<h2>Contact Form</h2>
+				<h3>For any inquiries, leave your info and I shall get back to you as soon as I can!</h3>
+				<section>
+				<label for = "fname">*FIRST NAME:</label><br>
+					<input type = "text" id = "fname" name = "fname" placeholder = "Jane"required size = "75"><br>
+				</section>
+				<section>
+				<label for = "lname">*LAST NAME:</label><br>
+					<input type = "text" id = "lname" name = "lname" required placeholder = "Doe"size = "75"><br>
+				</section>
+				<section>
+				<label for = "email">*E-MAIL ADDRESS:</label><br>
+					<input type = "email" id = "email" name = "email" required placeholder = "example@mail.com"size = "75"><br>
+				</section>
+				<section>
+				<label for = "number">PHONE NUMBER:</label><br>
+					<input type = "telephone" id = "phonenumber" name = "phonenumber" placeholder = "###-###-####" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" size = "75"><br>
+				</section>
+				<section>
+				<label for = "descbox">*WHAT IS YOUR INQUIRY?</label><br>
+					<textarea id = "desc" name = "desc" rows = "10" cols = "150" placeholder = "Enter message here."></textarea><br><br><br>
+				</section>
+			</div>
+
+				<input id = "submit" type = "submit" value = "Submit">
+				<input id = "reset" type = "reset" value = "Reset">
+
+
+			</form>
+
+
+		</div>
+
+
+		<footer>
+			<p>
+					<a href = "https://www.linkedin.com/in/ivettecortez/"><img id = "linkedin" src = "../pics/linkedin.png"></a>
+					<a href = "https://instagram.com/capturethisivette?igshid=db3lghgxvixt"><img id = "insta" src = "../pics/instagram.png"></a>
+				</p>
+				<p id = "copyright">
+					&copy; Ivette Cortez
+				</p>
+
+		</footer>
+	</body>
+
+</html>

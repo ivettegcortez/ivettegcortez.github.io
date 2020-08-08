@@ -2,7 +2,7 @@
 @font-face{
 	font-family: Multicolore;
 	src: url(fonts/Multicolore.otf);
-	font-family: Rounded Elegance;
+	font-family: "Rounded Elegance";
 	src: url(fonts/Rounded_Elegance.ttf);
 	font-family: Giorgio-Thin;
 	src: url(fonts/Giorgio-Thin.ttf);
@@ -175,11 +175,13 @@ footer p{
 		top:auto;
 		text-align: center;
 		margin-top: 25px;
+		font-family: Giorgio;
 	}
 
 
 	.page-description{
 		margin:5px;
+		padding: 10px;
 	}
 
 	#webandphoto{
@@ -200,7 +202,7 @@ footer p{
 	.topnav{
 		margin:0;
 	}
-	#img-wrapper{
-		margin-bottom: 15px;
+	.img-wrapper{
+		margin-bottom: 30px;
 	}
 }

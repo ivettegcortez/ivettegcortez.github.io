@@ -1,0 +1,221 @@
+/*css for informational website*/
+@font-face{
+	font-family: courgette-regular;
+	src: url(fonts/courgette-regular.woff) format("woff"),
+		url(fonts/Courgette-Regular.ttf) format("truetype");
+	font-family: QuattrocentoSans-Regular;
+	src: url(fonts/QuattrocentoSans-Regular.woff) format("woff"),
+		url(fonts/QuattrocentoSans-Regular.ttf) format("truetype");
+}
+
+
+
+
+body{
+	margin:0;
+	padding:0;
+}
+
+header{
+	padding:50px;
+	background-color: #f07886;
+	/*coral pink color*/
+
+}
+
+a{
+	color: white;
+	font-family: courgette-regular;
+	text-decoration: none;
+}
+
+a:hover{
+	color:gold;
+}
+
+a:active{
+	color:teal;
+}
+#topnav a{
+	font-size: 26px;
+	margin-left:20px;
+	margin-right: 20px;
+	position: relative;
+}
+a:hover {
+  top: -10px;
+  transition-duration: 0.2s;
+}
+/*@keyframes moveup{
+	from{transform: translateY(0px);}
+	to{transform: translateY(-15px);}
+}
+
+.toptitle a:hover{
+	animation-name: moveup;
+}*/
+
+
+/*middle of page*/
+main{
+	margin:15px;
+	display: grid;
+	grid-column-gap: 30px;
+	grid-template-columns: 15% 1fr 1fr;
+
+}
+article{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.sidenav{
+	font-size: 26px;
+	text-align: center;
+	grid-column: 1/2;
+	grid-row: 2/3;
+	justify-self: flex-end;
+
+}
+ul{
+	list-style-type: none;
+}
+.side{
+	background-color: #f07886;
+	border-radius: 10px;
+	width:180px;
+	padding:10px;
+	margin-bottom:10px;
+}
+#current{
+	color:gray;
+}
+h1{
+	grid-column: 2/4;
+	grid-row:1/2;
+	padding:10px;
+	text-align: center;
+	font-family: courgette-regular;
+	font-size: 38px;
+
+}
+#mpic, #divorcepic{
+	grid-area: pic;
+	width:1000px;
+	height:300px;
+	grid-column: 2/4;
+	grid-row:2/3;
+	margin: auto;
+	padding:10px;
+}
+/*h2 for first part*/
+#D, #SP, #Per, #C{
+	grid-column: 2/4;
+	grid-row:3/4;
+	text-align: center;
+}
+
+#datingsec, #singlePsec, #perSec, #contemptSec{
+	grid-column:2/4;
+	grid-row:4/5;
+	margin:10px;
+}
+
+
+
+p{
+	margin:10px;
+	font-family: QuattrocentoSans-Regular;
+	line-height: 20px;
+	margin-top:0;
+	padding:10px;
+}
+
+/*h2 for second part*/
+#M, #Str, #Ind, #Cri{
+	grid-column: 2/4;
+	grid-row: 5/6;
+	text-align: center;
+}
+
+#marriagesec, #stressorsSec, #IndividualismSec, #criticismSec{
+	grid-column: 2/4;
+	grid-row:6/7;
+
+}
+
+#Di, #factorsh2, #defense{
+	grid-column: 2/4;
+	grid-row:8/9;
+	text-align: center;
+}
+#divorceSec, #FactorsSec, #defensiveSec{
+	grid-column: 2/4;
+	grid-row:9/10;
+}
+
+
+/*effects on children section*/
+#starter{
+	grid-column: 3/4;
+	grid-row: 2/3;
+	margin:auto;
+	text-align: center;
+}
+#single{
+	display: inline-block;
+}
+#childrenpic, #conflictpic{
+	grid-column: 2/3;
+	grid-row: 2/3;
+	width:700px;
+}
+#stone{
+	grid-column: 2/4;
+	grid-row:10/11;
+	text-align: center;
+}
+#stonewallingSec{
+	grid-column: 2/4;
+	grid-row:11/12;
+}
+h2{
+	font-family: courgette-regular;
+}
+li{
+	font-family: QuattrocentoSans-Regular;
+}
+
+footer{
+	background-color: gray;
+	padding:25px;
+	text-align: center;
+	color:white;
+	margin-top:30px;
+}
+
+
+@media only screen and (max-width: 600px){
+	main, article{
+		display: block;
+	}
+	.sidenav{
+		display: none;
+	}
+	#mpic, #divorcepic, #childrenpic, #conflictpic{
+		width:370px;
+		height:200px;
+		text-align: center;
+	}
+	#topnav{
+		display: inline-grid;
+	}
+
+	#topnav a{
+		margin-bottom: 15px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+
+}

@@ -1,0 +1,549 @@
+/*css for photography page*/
+
+@font-face{
+	font-family: Multicolore;
+	src: url(../fonts/Multicolore.otf);
+	font-family: Rounded Elegance;
+	src: url(../fonts/Rounded_Elegance.ttf);
+	font-family: Giorgio-Thin;
+	src: url(../fonts/Giorgio-Thin.ttf);
+
+}
+
+body{
+	padding:0;
+	margin:0;
+}
+
+header{
+	background-color: #92E6DD;
+	padding:30px;
+	font-size: 20px;
+
+}
+.name{
+	color:white;
+}
+h1{
+	font-family: Multicolore;
+}
+
+.title{
+	color:#92E6DD;
+	text-align: center;
+	font-size: 40px;
+}
+
+a:link, a:visited{
+	text-decoration: none;
+	color:#92E6DD;
+}
+a:hover{
+	color:gold;
+}
+a:active{
+	color: gray;
+}
+
+
+/*navigation bar*/
+.topnav{
+	overflow: hidden;
+	margin-left: 33em;
+	font-family: Giorgio;
+}
+
+.topnav a{
+	color:white;
+	padding:15px;
+	float: left;
+	text-decoration: none;
+
+}
+.topnav a.current{
+	color:#707070;
+}
+
+.topnav a:hover{
+	color:gold;
+}
+
+/*middle portion*/
+#container{
+	font-family: Giorgio;
+	margin:50px;
+	display: grid;
+
+}
+
+#topdesc{
+	grid-row:1/2;
+	grid-column: 1/3;
+	margin-bottom: 30px;
+	text-indent: 30px;
+	line-height: 32px;
+}
+
+.profpics{
+	width:300px;
+	height:400px;
+
+}
+
+.img-wrapper{
+	justify-self:center;
+	padding:30px;
+	position: relative;
+}
+
+.color-overlay{
+	width:300px;
+	height:100px;
+	background-color: black;
+	opacity: 0.7;
+	position: absolute;
+	top:330px;
+	left:30px;
+	object-fit: cover;
+}
+.color-overlay:hover{
+	animation: slideBox .5s forwards;
+}
+.title{
+	font-family: Multicolore;
+	color:white;
+	font-size:24px;
+	margin-top:45px;
+}
+
+@keyframes slideBox{
+	0%{transform:translateY(0px) scaleY(1);}
+	100%{transform: translateY(-150px) scaleY(4);}
+}
+
+
+/*landscape section*/
+#landcontainer{
+	padding-bottom: 50px;
+	color:#92E6DD;
+	font-family: Multicolore;
+	font-size: 26px;
+	display: grid;
+	grid-row-gap: 30px;
+	grid-column-gap: 30px;
+	grid-template-columns: repeat(6, 1fr);
+ 	grid-template-areas: 
+    ". . t t . p"
+    " one one one two two two "
+    " thr thr four four five five "
+    " six six six sev sev sev"
+    " eight eight nine nine ten ten"
+    " ele ele ele twe twe twe"
+    " thir thir thir fourt fourt fourt"
+    " fif fif fif sixt sixt sixt"
+    " seve seve seve eightt eightt eightt"
+    " ninet ninet ninet twenty twenty twenty"
+    " twe-1 twe-1 twe-1 twe-2 twe-2 twe-2"
+    " twe-3 twe-3 twe-3 twe-4 twe-4 twe-4"
+    " twe-5 twe-5 twe-5 twe-6 twe-6 twe-6"
+    " twe-7 twe-7 twe-7 twe-8 twe-8 twe-8"
+    " twe-9 twe-9 twe-9 twe-10 twe-10 twe-10"
+    " twe-11 twe-11 twe-11 twe-12 twe-12 twe-12"
+    " twe-13 twe-13 twe-13 twe-14 twe-14 twe-14"
+    " twe-15 twe-15 twe-15 twe-16 twe-16 twe-16"
+    " twe-17 twe-17 twe-17 twe-18 twe-18 twe-18"
+    " twe-19 twe-19 twe-19 twe-20 twe-20 twe-20"
+    ;
+}
+
+
+.landtitle{
+	margin:30px;
+	grid-area: t;
+	justify-self: center;
+}
+
+span{
+	grid-area:p;
+	align-self: end;
+	font-size: 16px;
+}
+
+
+.landphotos{
+	justify-self:center;
+}
+/*first row*/
+.landphotos:nth-child(3){
+	width:500px;
+	height:400px;
+	/*grid-column: 1/3;*/
+	grid-area: one;
+	justify-self: flex-end;
+
+}
+
+.landphotos:nth-child(4){
+	width:500px;
+	height:400px;
+	/*grid-column: 3/7;*/
+	/*justify-self: center; */
+	grid-area: two;
+	justify-self: flex-start;
+
+}
+/*second row*/
+.landphotos:nth-child(5){
+	width:300px;
+	height:400px;
+	/*grid-column: 1/2;*/
+	/*grid-row: 3/4;*/
+	grid-area: thr;
+	justify-self: flex-end;
+
+}
+
+.landphotos:nth-child(6){
+	width:300px;
+	height:400px;
+	/*grid-column: 3/4;*/
+	/*grid-row: 3/4;*/
+	grid-area: four;
+
+}
+
+.landphotos:nth-child(7){
+	width:300px;
+	height:400px;
+	/*grid-column: 5/6;*/
+	/*grid-row: 3/4;*/
+	grid-area: five;
+	justify-self: flex-start;
+
+}
+/*third row*/
+.landphotos:nth-child(8){
+	width:500px;
+	height:400px;
+	grid-area: six;
+	justify-self: flex-end;
+
+}
+
+.landphotos:nth-child(9){
+	width:500px;
+	height:400px;
+	grid-area: sev;
+	justify-self: flex-start;
+
+}
+/*fourth row*/
+.landphotos:nth-child(10){
+	width:300px;
+	height:400px;
+	grid-area: eight;
+	justify-self:flex-end;
+
+}
+
+.landphotos:nth-child(11){
+	width:300px;
+	height:400px;
+	grid-area: nine;
+
+}
+
+.landphotos:nth-child(12){
+	width:300px;
+	height:400px;
+	grid-area: ten;
+	justify-self:flex-start;
+}
+
+/*fifth row*/
+.landphotos:nth-child(13){
+	width:500px;
+	height:400px;
+	grid-area: ele;
+	justify-self: flex-end;
+
+}
+.landphotos:nth-child(14){
+	width:500px;
+	height:400px;
+	grid-area: twe;
+	justify-self: flex-start;
+
+}
+
+/*sixth row*/
+.landphotos:nth-child(15){
+	width:500px;
+	height:400px;
+	grid-area: thir;
+	justify-self: flex-end;
+}
+
+.landphotos:nth-child(16){
+	width:500px;
+	height:400px;
+	grid-area: fourt;
+	justify-self: flex-start;
+}
+
+/*seventh row*/
+.landphotos:nth-child(17){
+	width:500px;
+	height:400px;
+	grid-area: fif;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(18){
+	width:500px;
+	height:400px;
+	grid-area: sixt;
+	justify-self: flex-start;
+}
+
+/*eight row*/
+.landphotos:nth-child(19){
+	width:500px;
+	height:400px;
+	grid-area: seve;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(20){
+	width:500px;
+	height:400px;
+	grid-area: eightt;
+	justify-self: flex-start;
+}
+
+/*ninth row*/
+.landphotos:nth-child(21){
+	width:500px;
+	height:400px;
+	grid-area: ninet;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(22){
+	width:500px;
+	height:400px;
+	grid-area: twenty;
+	justify-self: flex-start;
+}
+
+/*tenth row*/
+.landphotos:nth-child(23){
+	width:500px;
+	height:400px;
+	grid-area: twe-1;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(24){
+	width:500px;
+	height:400px;
+	grid-area: twe-2;
+	justify-self: flex-start;
+}
+
+/*eleven row*/
+.landphotos:nth-child(25){
+	width:500px;
+	height:400px;
+	grid-area: twe-3;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(26){
+	width:500px;
+	height:400px;
+	grid-area: twe-4;
+	justify-self: flex-start;
+}
+
+/*twelveth row*/
+.landphotos:nth-child(27){
+	width:500px;
+	height:400px;
+	grid-area: twe-3;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(28){
+	width:500px;
+	height:400px;
+	grid-area: twe-4;
+	justify-self: flex-start;
+}
+
+/*thirteenth row*/
+.landphotos:nth-child(29){
+	width:500px;
+	height:400px;
+	grid-area: twe-5;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(30){
+	width:500px;
+	height:400px;
+	grid-area: twe-6;
+	justify-self: flex-start;
+}
+
+/*fourteenth row*/
+.landphotos:nth-child(31){
+	width:500px;
+	height:400px;
+	grid-area: twe-7;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(32){
+	width:500px;
+	height:400px;
+	grid-area: twe-8;
+	justify-self: flex-start;
+}
+
+/*fifteenth row*/
+.landphotos:nth-child(33){
+	width:500px;
+	height:400px;
+	grid-area: twe-9;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(34){
+	width:500px;
+	height:400px;
+	grid-area: twe-10;
+	justify-self: flex-start;
+}
+
+/*sixteenth row*/
+.landphotos:nth-child(35){
+	width:500px;
+	height:400px;
+	grid-area: twe-11;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(36){
+	width:500px;
+	height:400px;
+	grid-area: twe-12;
+	justify-self: flex-start;
+}
+
+/*seventeenth row*/
+.landphotos:nth-child(37){
+	width:500px;
+	height:400px;
+	grid-area: twe-13;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(38){
+	width:500px;
+	height:400px;
+	grid-area: twe-14;
+	justify-self: flex-start;
+}
+
+/*eighteenth row*/
+.landphotos:nth-child(39){
+	width:500px;
+	height:400px;
+	grid-area: twe-15;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(40){
+	width:500px;
+	height:400px;
+	grid-area: twe-16;
+	justify-self: flex-start;
+}
+
+/*nineteenth row*/
+.landphotos:nth-child(41){
+	width:500px;
+	height:400px;
+	grid-area: twe-17;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(42){
+	width:500px;
+	height:400px;
+	grid-area: twe-18;
+	justify-self: flex-start;
+}
+
+/*twentyith row*/
+.landphotos:nth-child(43){
+	width:500px;
+	height:400px;
+	grid-area: twe-19;
+	justify-self: flex-end;
+}
+.landphotos:nth-child(44){
+	width:500px;
+	height:400px;
+	grid-area: twe-20;
+	justify-self: flex-start;
+}
+
+/*bottom portion*/
+footer{
+	background-color:black;
+	color:white;
+
+}
+footer p{
+	text-align: center;
+}
+
+.copyright{
+	padding-bottom:15px;
+	margin: 0px;
+	font-family: Giorgio-Thin;
+}
+.insta, .linkedin{
+	width:50px;
+	margin:15px;
+
+}
+
+.linkedin{
+	border-radius: 20px;
+}
+
+
+
+@media only screen and (max-width:600px){
+	.topnav{
+		margin:0;
+	}
+	#landcontainer{
+		display: block;
+		text-align: center;
+	}
+	#h{
+		width:350px;
+		height: 250px;
+	}
+	#v{
+		width:200px;
+		height: 300px;
+	}
+
+	#container{
+		display: block;
+	}
+	#topdesc{
+		font-size: 16px;
+	}
+
+	.profpics{
+		width: 250px;
+	}
+	.color-overlay{
+		width: 250px;
+	}
+
+}
+

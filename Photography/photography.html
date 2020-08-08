@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<title>Photography</title>
+		<link rel = "stylesheet" href = "photography.css">
+		<link rel = "icon" type = "image/png" href = "../pics/logo.png">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	</head>
+
+	<body>
+		<header>
+			<h1 class = "name">Ivette Cortez</h1>
+				<div class = "topnav">
+					<a href = "../index.html">Home</a>
+					<a href = "../AboutMe/aboutme.html">About Me</a>
+					<a href = "../WebDesign/webdesign.html">Web Design</a>
+					<a class = "current">Photography</a>
+					<a href = "../Contact/contact.html">Contact</a>
+				</div>
+
+		</header>
+
+		<div id = "container">
+
+			<h2 id ="topdesc">Welcome to my photography page!
+			I make myself known as a photographer along with web design because I love taking pictures, and I believe that capturing the right shot can share immense beauty that other people don’t normally see within people or places. I specialize in portraits and occasionally do landscapes. If you are interested in getting some pictures for a private session or just want to connect for the love of photos feel free to contact me!</h2>
+
+			<section class="img-wrapper" onclick = "landscapes()">
+				<img class = "profpics" src = "photos/Landscapes/Portugal7.jpg" alt = "Landscapes">
+				<div class = "color-overlay"><h2 class = "title">Landscapes</h2></div>
+
+			</section>
+
+			<section class="img-wrapper" onclick = "portraits()">
+				<img class = "profpics" src = "photos/Portraits/Hala/hala.jpg" alt = "Portraits">
+				<div class = "color-overlay"><h2 class = "title">Portraits</h2></div>
+
+			</section>
+
+		</div>
+
+
+		<footer>
+			<p>
+				<a href = "https://www.linkedin.com/in/ivettecortez/"><img class = "linkedin" src = "../pics/linkedin.png"></a>
+				<a href = "https://instagram.com/capturethisivette?igshid=db3lghgxvixt"><img class = "insta" src = "../pics/instagram.png"></a>
+			</p>
+			<p class = "copyright">
+				&copy; Ivette Cortez
+			</p>
+
+		</footer>
+		<script src = "../jquery-3.5.1.min.js"></script>
+		<script src = "photography.js"></script>
+
+	</body>
+
+</html>
